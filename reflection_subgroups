@@ -1,0 +1,152 @@
+M:=SymmetricMatrix([1,3,1,2,6,1]);
+
+W<[s]>:=CoxeterGroup(M); //The Coxeter group, generators s[1],s[2],...,s[Rank(W)].
+
+S:={s[i] : i in {1..Rank(W)}}; //the generating set.
+
+
+// Function to return reflection subgroup, given two reflections
+reflection_subgrp:=function(s_beta, s_alpha);
+
+	group:={s_alpha, s_beta};
+	generators:= group;
+
+	temp_n:= 1;
+
+	while temp_n lt #group do;
+
+		for g in generators do;
+
+			temp_n:=#group;
+			
+			temp_set:={};
+
+			for element in group do;
+		
+				temp:= g*element;
+				temp_set:= temp_set join {temp};
+
+			end for;
+
+			for thing in temp_set do;
+			
+				if thing notin group then;
+					group:= group join {thing};
+				end if;
+
+			end for;
+
+			if #group eq temp_n then;
+				break;
+			end if;		
+
+		end for;
+
+	end while;
+
+	return group;
+
+end function;
+
+
+coset:=function(x, grp, left_or_right);
+	c:={};
+
+	if left_or_right eq "r" then;
+
+		for i in grp do;
+			c:=c join {i*x};
+		end for;
+
+	else;
+
+		for i in grp do;
+			c:=c join {x*i};
+		end for;
+
+	end if;		
+
+	return c;
+
+end function;
+
+unique_shortest_element:=function(c);
+	temp:=Random(c);
+
+	for i in c do;
+		if Length(i) lt Length(temp) then;
+			temp:=i;
+		end if;
+	end for;
+
+	return temp;
+
+end function;
+
+inverse:=function(x);
+	l:=Length(x);
+
+	if l eq 1 then;
+		return x;
+	else;
+
+		inverse_word:=Subword(x,l,1);
+
+		for i in [1..(l-1)] do;
+			inverse_word:=inverse_word*Subword(x,l-i,1);
+		end for;
+
+	end if;
+		
+	return inverse_word*Id(W);
+
+end function;
+
+
+left_inversion_set:=function(x);
+	
+	l:=Length(x);
+
+	inversions:={Subword(x,1,1)*Id(W)};
+
+	for i in [2..l] do;
+		y:= Subword(x,1,i)*inverse(Subword(x,1,i-1)*Id(W)); // Note: multiplying it by the identity here just forces it to be considered as a Coxeter element, instead of just a "word" object
+		inversions:= inversions join {y*Id(W)};
+	end for;
+
+	return inversions;
+
+end function;
+
+
+canonical_reflections:=function(reflection_subgrp);
+	
+	canonical:={};
+
+	reflections:={};
+
+	for el in (reflection_subgrp diff {Id(W)}) do;
+		if IsReflection(el) then;
+			reflections:= reflections join {el};
+		end if;
+	end for;
+
+	for r in reflections do;
+		if left_inversion_set(r) meet reflection_subgrp eq {r} then;
+			canonical := canonical join {r};
+		end if;
+	end for;
+
+	return canonical;
+
+end function;
+
+
+
+
+
+
+
+
+
+
