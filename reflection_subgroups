@@ -42,7 +42,7 @@ reflection_subgrp:=function(s_beta, s_alpha);
 
 		end for;
 
-		if #group > 20 then;
+		if #group gt 20 then;
 			print "Looks like infinite dihedral group, I'm stopping";
 			break;
 		end if;
