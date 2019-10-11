@@ -1,0 +1,55 @@
+Elementary roots: 13
+NUMBER OF STATES IS NOW: 8
+NUMBER OF STATES IS NOW: 15
+NUMBER OF STATES IS NOW: 21
+NUMBER OF STATES IS NOW: 25
+NUMBER OF STATES IS NOW: 28
+NUMBER OF STATES IS NOW: 31
+NUMBER OF STATES IS NOW: 34
+NUMBER OF STATES IS NOW: 36
+NUMBER OF STATES IS NOW: 38
+NUMBER OF STATES IS NOW: 39
+NUMBER OF STATES IS NOW: 40
+NUMBER OF STATES IS NOW: 41
+NUMBER OF STATES IS NOW: 41
+Number of states: 41
+['s', 't', 'u', 'ts', 'us', 'st', 'ut', 'tu', 'sts', 'uts', 'tus', 'ust', 'tut', 'stu', 'utu', 'usts', 'stus', 'utus', 'utut', 'ustu', 'tutu', 'tusts', 'ustus', 'tutut', 'ututu', 'utusts', 'ututut', 'tututu', 'tututut', 'stututu', 'utututu', 'stututut', 'utututut', 'ustututu', 'ustututut', 'tustututu', 'tustututut', 'utustututu', 'utustututut', 'tutustututut', 'ututustututut']
+
+36 minimal states + 1 for identity
+
+[{'s'},
+ {'t'},
+ {'u'},
+ {'ts'},
+ {'us', 'ust', 'ustu'},
+ {'st', 'stu'},
+ {'ut'},
+ {'tu'},
+ {'sts', 'stus'},
+ {'uts'},
+ {'tus'},
+ {'tut'},
+ {'utu'},
+ {'usts', 'ustus'},
+ {'utus'},
+ {'utut'},
+ {'tutu'},
+ {'tusts'},
+ {'tutut'},
+ {'ututu'},
+ {'utusts'},
+ {'ututut'},
+ {'tututu'},
+ {'tututut'},
+ {'stututu'},
+ {'utututu'},
+ {'stututut'},
+ {'utututut'},
+ {'ustututu'},
+ {'ustututut'},
+ {'tustututu'},
+ {'tustututut'},
+ {'utustututu'},
+ {'utustututut'},
+ {'tutustututut'},
+ {'ututustututut'}]

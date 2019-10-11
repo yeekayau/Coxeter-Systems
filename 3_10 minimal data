@@ -1,0 +1,61 @@
+Elementary roots: 15
+NUMBER OF STATES IS NOW: 8
+NUMBER OF STATES IS NOW: 15
+NUMBER OF STATES IS NOW: 21
+NUMBER OF STATES IS NOW: 25
+NUMBER OF STATES IS NOW: 28
+NUMBER OF STATES IS NOW: 30
+NUMBER OF STATES IS NOW: 32
+NUMBER OF STATES IS NOW: 35
+NUMBER OF STATES IS NOW: 38
+NUMBER OF STATES IS NOW: 40
+NUMBER OF STATES IS NOW: 42
+NUMBER OF STATES IS NOW: 43
+NUMBER OF STATES IS NOW: 44
+NUMBER OF STATES IS NOW: 45
+NUMBER OF STATES IS NOW: 45
+Number of states: 45
+['s', 't', 'u', 'ts', 'us', 'st', 'ut', 'tu', 'sts', 'uts', 'tus', 'ust', 'tut', 'stu', 'utu', 'usts', 'stus', 'utus', 'utut', 'ustu', 'tutu', 'tusts', 'ustus', 'tutut', 'ututu', 'utusts', 'ututut', 'tututu', 'tututut', 'utututu', 'utututut', 'tutututu', 'tutututut', 'stutututu', 'ututututu', 'stutututut', 'ututututut', 'ustutututu', 'ustutututut', 'tustutututu', 'tustutututut', 'utustutututu', 'utustutututut', 'tutustutututut', 'ututustutututut']
+
+40 + 1
+
+[{'s'},
+ {'t'},
+ {'u'},
+ {'ts'},
+ {'us', 'ust', 'ustu'},
+ {'st', 'stu'},
+ {'ut'},
+ {'tu'},
+ {'sts', 'stus'},
+ {'uts'},
+ {'tus'},
+ {'tut'},
+ {'utu'},
+ {'usts', 'ustus'},
+ {'utus'},
+ {'utut'},
+ {'tutu'},
+ {'tusts'},
+ {'tutut'},
+ {'ututu'},
+ {'utusts'},
+ {'ututut'},
+ {'tututu'},
+ {'tututut'},
+ {'utututu'},
+ {'utututut'},
+ {'tutututu'},
+ {'tutututut'},
+ {'stutututu'},
+ {'ututututu'},
+ {'stutututut'},
+ {'ututututut'},
+ {'ustutututu'},
+ {'ustutututut'},
+ {'tustutututu'},
+ {'tustutututut'},
+ {'utustutututu'},
+ {'utustutututut'},
+ {'tutustutututut'},
+ {'ututustutututut'}]
