@@ -1,0 +1,45 @@
+Elementary roots: 11
+
+NUMBER OF STATES IS NOW: 8
+NUMBER OF STATES IS NOW: 14
+NUMBER OF STATES IS NOW: 18
+NUMBER OF STATES IS NOW: 21
+NUMBER OF STATES IS NOW: 24
+NUMBER OF STATES IS NOW: 26
+NUMBER OF STATES IS NOW: 27
+NUMBER OF STATES IS NOW: 28
+NUMBER OF STATES IS NOW: 29
+NUMBER OF STATES IS NOW: 29
+Number of states: 29
+['s', 't', 'u', 'ts', 'us', 'st', 'ut', 'tu', 'sts', 'tus', 'tst', 'ust', 'tut', 'utu', 'tsts', 'utst', 'utut', 'tutu', 'utsts', 'tutut', 'ututu', 'tutsts', 'ututut', 'tututu', 'tututut', 'stututu', 'stututut', 'tstututut', 'utstututut']
+
+28 + 1
+
+[{'s'},
+ {'t'},
+ {'u'},
+ {'ts'},
+ {'us', 'ust'},
+ {'st'},
+ {'ut'},
+ {'tu'},
+ {'sts'},
+ {'tus'},
+ {'tst'},
+ {'tut'},
+ {'utu'},
+ {'tsts'},
+ {'utst'},
+ {'utut'},
+ {'tutu'},
+ {'utsts'},
+ {'tutut'},
+ {'ututu'},
+ {'tutsts'},
+ {'ututut'},
+ {'tututu'},
+ {'tututut'},
+ {'stututu'},
+ {'stututut'},
+ {'tstututut'},
+ {'utstututut'}]
